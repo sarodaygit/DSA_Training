@@ -5,15 +5,10 @@ def linearfunc(numlist):
         print(f'i =  {i} array value = {num} and product = {product}')
         i+= 1
 
-def linearfunc1(numlist):
-    product = 100 * 1000
-    print(f' product = {product}')
-
 
 if __name__ == "__main__":
     numlist = [2,3,6,4,5,7]
     linearfunc(numlist)
-    linearfunc1(numlist)
 
 
 

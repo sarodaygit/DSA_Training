@@ -15,7 +15,7 @@ print("Last element:", numbers[-1])  # Expected output: 50
 print("\nModifying elements:")
 numbers[1] = 25
 print("Modified array:", numbers)
-
+ddd
 # Error Scenario 1: Adding elements of the wrong type
 try:
     print("\nAdding an element of the wrong type:")
