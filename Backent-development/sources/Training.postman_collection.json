@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "ecd1d417-8475-409e-9ef5-0db386f0a04c",
+		"name": "Training",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39638831"
+	},
+	"item": [
+		{
+			"name": "ADD_USER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"john\",\r\n    \"email\" : \"john@example.com\",\r\n    \"age\" : 25,\r\n    \"role\" : \"user\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/add_user",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"add_user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_ALL_USERS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_USER_BY_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/users/6734bb5a8bb05a40f93bce63",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"6734bb5a8bb05a40f93bce63"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_USER_BY_NAME",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/users//name?name=bob",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"",
+						"name"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "bob"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_USER_BY_NAME",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/users//name?name=bob",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"",
+						"name"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "bob"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_TOTAL_USERS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/users/count",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_USERS_BY_GROUP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/users/age?min_age=27\n",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"age"
+					],
+					"query": [
+						{
+							"key": "min_age",
+							"value": "27\n"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
